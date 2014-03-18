@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:f="http://xmlns.jcp.org/jsf/core"
+  xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+  <title>Add Contact</title>
+</h:head>
+
+<h:body>
+  <p>Add Contact</p>
+  <h:form>
+    <p>
+      <h:outputLabel for="name">Name:</h:outputLabel>
+      <h:inputText id="name" value="#{addContactBean.contact.name}"/>
+    </p>
+    <p>
+      <h:outputLabel for="phone">Phone:</h:outputLabel>
+      <h:inputText id="phone" value="#{addContactBean.contact.phone}"/>
+    </p>
+    <p>
+      <h:commandButton value="Save" action="#{addContactBean.save}"/>
+    </p>
+  </h:form>
+</h:body>
+
+</html>
